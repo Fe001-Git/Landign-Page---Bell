@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Bell Nascimento | A blogueira do Bom Jardim</title>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="canonical" href="https://bellnascimento.com.br/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23FAF8F5'/%3E%3Ctext x='32' y='47' font-size='44' text-anchor='middle' font-family='Georgia,serif' font-style='italic' fill='%23B4486D'%3EB%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://bellnascimento.com.br/">
+<meta property="og:image" content="https://bellnascimento.com.br/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Isabelle Nascimento Girão","alternateName":"Bell","jobTitle":"Influenciadora digital, publicitária e modelo fotográfica","url":"https://bellnascimento.com.br/","sameAs":["https://www.instagram.com/_bellnascimento","https://www.tiktok.com/@_bellnascimentog"]}</script>
+<meta name="description" content="Bell, a blogueira do Bom Jardim. Influenciadora digital, publicitária e modelo fotográfica de Fortaleza. Vamos criar juntas?">
+<meta property="og:title" content="Bell · A blogueira do Bom Jardim">
+<meta property="og:description" content="Influenciadora digital, publicitária e modelo fotográfica de Fortaleza. Parcerias com marcas.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<style>
+/* Layout: galeria branca, editorial e silenciosa. Foto cheia no topo com "Bell" em italico gigante; secoes alternando branco e off-white; um unico acento rosado nas palavras em italico. Um unico botao de parceria, fixo no topo. */
+:root{
+  --bg:#FAF8F5;          /* off white */
+  --paper:#FFFFFF;
+  --surface:#F3EFE9;
+  --fg:#1C1A18;
+  --muted:#6F6A64;
+  --line:#E6E0D8;
+  --accent:#B4486D;      /* rosa queimado, so em detalhes */
+  --ink-btn:#1C1A18;
+  --on-ink:#FAF8F5;
+  --display:"Cormorant Garamond","Cormorant",Georgia,"Times New Roman",serif;
+  --body:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --gutter:20px;
+}
+/* Visual unico, sempre claro, independente do tema do aparelho. */
+:root,:root[data-theme="dark"]{color-scheme:light}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.65;padding-inline:var(--gutter);padding-block:0}
+img,video{display:block;max-width:100%}
+img{height:auto}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.in{max-width:1080px;margin-inline:auto}
+section{padding-block:72px}
+h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.02;margin:0;text-wrap:balance}
+h2{font-size:clamp(2.4rem,9vw,4rem)}
+h3{font-size:1.9rem}
+h2 em,h3 em{color:var(--accent)}
+p{margin:0;text-wrap:pretty}
+.eyebrow{font-size:.7rem;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.lead{color:var(--muted);max-width:52ch}
+.band{background:var(--paper);margin-inline:calc(var(--gutter) * -1);padding-inline:var(--gutter)}
+.sec-head{display:grid;gap:12px;margin-bottom:36px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:52px;padding:0 26px;border:1px solid var(--fg);background:transparent;color:var(--fg);font:500 .95rem var(--body);letter-spacing:.02em;text-decoration:none;cursor:pointer;transition:background .2s ease,color .2s ease}
+.btn:hover{background:var(--fg);color:var(--bg)}
+.btn.solid{background:var(--ink-btn);color:var(--on-ink);border-color:var(--ink-btn)}
+.btn.solid:hover{background:transparent;color:var(--fg)}
+.btn .ar{font-size:1.05em;line-height:1}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* topo fixo, com o unico botao de parceria */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--paper);margin-inline:calc(var(--gutter) * -1);padding-inline:var(--gutter);border-bottom:1px solid var(--line)}
+.top .in{display:flex;justify-content:space-between;align-items:center;padding-block:12px}
+.logo{font-family:var(--display);font-style:italic;font-size:2.4rem;line-height:1;text-decoration:none}
+.top .btn{min-height:46px;padding:0 20px;font-size:.9rem}
+
+/* hero */
+.hero{position:relative;height:clamp(540px,145vw,760px);overflow:hidden;background:var(--surface);color:#fff;margin-inline:calc(var(--gutter) * -1)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(20,14,12,.3),transparent 22%,transparent 50%,rgba(20,14,12,.78))}
+.hero .in{position:relative;z-index:1;height:100%;padding-inline:var(--gutter);display:grid;grid-template-rows:auto 1fr auto;padding-block:20px 32px}
+.hero .meta{display:flex;justify-content:flex-end;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500}
+.hero .meta a{text-decoration:none}
+.hero .name{align-self:end;display:grid;gap:16px;justify-items:start}
+.hero h1{font-style:italic;font-weight:500;font-size:clamp(6rem,33vw,12rem);line-height:.8;letter-spacing:-.02em}
+.hero .tag{border:1px solid rgba(255,255,255,.75);padding:7px 16px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500}
+
+/* apresentacao */
+.intro{display:grid;gap:36px;align-items:center}
+.intro .txt{display:grid;gap:20px}
+.intro .txt p{color:var(--muted);max-width:52ch}
+.intro .txt p.big{font-family:var(--display);font-size:1.5rem;line-height:1.3;color:var(--fg)}
+.photo{margin:0}
+.photo img{width:100%;aspect-ratio:4/5;object-fit:cover}
+@media (min-width:860px){.intro{grid-template-columns:1.05fr .95fr;gap:80px}.photo{order:2}}
+
+/* parcerias estrategicas */
+.partners{display:grid;gap:20px}
+@media (min-width:860px){.partners{grid-template-columns:repeat(3,1fr);gap:24px}}
+.p-card{display:grid;grid-template-rows:auto 1fr;border:1px solid var(--line);background:var(--bg);text-decoration:none;transition:border-color .2s}
+.p-card:hover{border-color:var(--fg)}
+.p-card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.p-card .b7{object-position:50% 12%}
+.p-card .cbi{object-position:50% 48%}
+.p-card .cbb{object-position:50% 22%}
+.p-body{display:grid;gap:10px;padding:24px;align-content:start}
+.p-body p{color:var(--muted);font-size:.95rem}
+.p-link{display:flex;justify-content:space-between;align-items:center;margin-top:8px;padding-top:14px;border-top:1px solid var(--line);font-size:.85rem;font-weight:500;letter-spacing:.04em}
+
+.metrics{display:flex;flex-wrap:wrap;justify-content:center;gap:36px 16px;text-align:center}
+.metric{flex:0 0 calc(50% - 8px);min-width:0}
+.metric b{display:block;font-family:var(--display);font-weight:500;font-size:clamp(2rem,7.4vw,4rem);line-height:1;white-space:nowrap}
+.metric span{display:block;margin-top:8px;font-size:.85rem;color:var(--muted);line-height:1.4}
+@media (min-width:860px){.metric{flex:1 1 0;min-width:0}.metric b{font-size:clamp(2.4rem,3.6vw,3.4rem)}}
+
+/* feed em carrossel automatico */
+.rail{display:flex;gap:12px;overflow-x:auto;padding-block:4px 16px;margin-inline:calc(var(--gutter) * -1);padding-inline:var(--gutter);scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.rail::-webkit-scrollbar{display:none}
+.rail .r{flex:none;height:clamp(380px,112vw,500px);margin:0;background:var(--surface)}
+.rail .ph{aspect-ratio:4/5}
+.rail .vd{aspect-ratio:9/16}
+.rail img,.rail video{width:100%;height:100%;object-fit:cover;pointer-events:none}
+.snd{position:absolute;right:10px;bottom:10px;width:46px;height:46px;border-radius:50%;border:0;background:rgba(255,255,255,.92);color:#1C1A18;display:grid;place-items:center;cursor:pointer;pointer-events:auto;padding:0}
+.snd svg{width:22px;height:22px}
+.snd .on{display:none}
+.snd[aria-pressed="true"] .on{display:block}
+.snd[aria-pressed="true"] .off{display:none}
+.rail .r{position:relative}
+.feed-cta{display:flex;justify-content:center;margin-top:20px}
+
+/* contato */
+.contact{text-align:center;display:grid;gap:22px;justify-items:center}
+.contact .lead{margin-inline:auto}
+.channels{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.mail{display:flex;flex-wrap:wrap;gap:8px 16px;justify-content:center;align-items:center;font-size:.95rem}
+.mail code{font:inherit;color:var(--fg);word-break:break-all;user-select:all}
+#copyMail{min-height:44px;padding:0 4px;border:0;border-bottom:1px solid var(--muted);background:transparent;color:var(--muted);font:400 .88rem var(--body);cursor:pointer;line-height:1.2;height:auto;min-height:0;padding-bottom:2px}
+#copyMail:hover{color:var(--fg);border-color:var(--fg)}
+.copied{min-height:1.3em;font-size:.82rem;color:var(--muted)}
+
+footer{padding-block:40px 44px;border-top:1px solid var(--line);display:grid;gap:10px;justify-items:center;text-align:center;font-size:.82rem;color:var(--muted)}
+
+/* modal de parceria */
+dialog{border:0;padding:0;background:var(--paper);color:var(--fg);width:100%;max-width:none;margin:auto 0 0;max-height:92%;overflow:auto;border-radius:18px 18px 0 0}
+dialog::backdrop{background:rgba(20,16,14,.55)}
+@media (min-width:640px){dialog{max-width:520px;margin:auto;border-radius:6px}}
+.sheet{position:relative;padding:34px 22px calc(26px + env(safe-area-inset-bottom,0px));display:grid;gap:18px}
+@media (min-width:640px){.sheet{padding:44px 44px 36px}}
+.sheet h2{font-size:clamp(2.2rem,8vw,3rem);text-align:center}
+.sheet .sub{text-align:center;color:var(--muted)}
+.x{position:absolute;right:10px;top:10px;width:44px;height:44px;background:none;border:0;color:var(--fg);font-size:1.6rem;line-height:1;cursor:pointer}
+form{display:grid;gap:14px}
+.field{display:grid;gap:6px}
+.field label{font-size:.85rem;font-weight:500}
+input{font:inherit;font-size:1rem;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:0;padding:13px 14px;width:100%;min-height:52px}
+input:focus-visible{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+.preview{font-size:.85rem;color:var(--muted);background:var(--bg);border-left:2px solid var(--accent);padding:10px 14px}
+.preview span{display:block;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:4px}
+
+/* movimento ao rolar: so entra em acao quando o JS marca o html com .rv-on */
+.rv-on .rv{opacity:0;transform:translate3d(0,30px,0);transition:opacity .9s cubic-bezier(.2,.7,.2,1) var(--d,0s),transform .9s cubic-bezier(.2,.7,.2,1) var(--d,0s),border-color .2s;will-change:opacity,transform}
+.rv-on .rv.in{opacity:1;transform:none}
+.rv-on .photo.rv{transform:translate3d(0,40px,0) scale(.97)}
+.rv-on .photo.rv.in{transform:none}
+.rv-on .rail.rv{transform:translate3d(48px,0,0)}
+.rv-on .rail.rv.in{transform:none}
+@media (prefers-reduced-motion:no-preference){
+  .hero>img{animation:zoom 2.4s cubic-bezier(.2,.7,.2,1) both}
+  .hero .meta,.hero h1,.hero .tag{animation:subir 1s cubic-bezier(.2,.7,.2,1) both}
+  .hero h1{animation-delay:.15s}.hero .tag{animation-delay:.35s}.hero .meta{animation-delay:.5s}
+}
+@keyframes zoom{from{transform:scale(1.1)}to{transform:none}}
+@keyframes subir{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
+@media print{.rv{opacity:1!important;transform:none!important}}
+html.lock{overflow:hidden}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<style>body{margin:0}[hidden]{display:none!important}</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="in">
+    <a class="logo" href="#topo" id="topo" aria-label="Bell, início">Bell</a>
+    <button class="btn" type="button" data-open data-track="parcerias">Parcerias <span class="ar" aria-hidden="true">↗</span></button>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <img src="img/hero-hd.webp" alt="Bell, de cabelo longo e ondulado, com as mãos nos cabelos" width="1000" height="1144" fetchpriority="high">
+    <div class="in">
+      <div class="meta"><a href="https://www.instagram.com/_bellnascimento" target="_blank" rel="noopener" data-track="hero_handle">@_bellnascimento</a></div>
+      <div></div>
+      <div class="name">
+        <h1>Bell</h1>
+        <span class="tag">A blogueira do Bom Jardim</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="in">
+    <section class="intro" id="sobre">
+      <div class="txt">
+        <span class="eyebrow">Influenciadora digital · Publicitária · Modelo fotográfica</span>
+        <h2>E aí, <em>irmãs!</em> 💗</h2>
+        <p class="big">Eu sou a Isabelle Nascimento Girão, mas podem me chamar de Bell.</p>
+        <p>Tenho 24 anos, sou de Fortaleza, no Ceará, e amo compartilhar experiências, mostrar um pouquinho da minha rotina e criar conexões verdadeiras.</p>
+        <p>Como influenciadora digital, publicitária e modelo fotográfica, uno criatividade, comunicação e autenticidade para criar conteúdos que geram identificação, despertam interesse e aproximam marcas de pessoas.</p>
+        <p>Acredito que uma parceria de sucesso vai além da divulgação: ela transmite confiança, conta histórias e cria experiências que conectam marcas ao seu público.</p>
+      </div>
+      <figure class="photo">
+        <img src="img/beleza-hd.webp" alt="Bell se maquiando, com bobes no cabelo" loading="lazy" width="760" height="924">
+      </figure>
+    </section>
+  </div>
+
+  <div class="band">
+    <div class="in">
+      <section id="parcerias">
+        <div class="sec-head">
+          <span class="eyebrow">Parcerias estratégicas</span>
+          <h2>Marcas que já fazem parte <em>da minha história.</em></h2>
+        </div>
+        <div class="partners">
+          <a class="p-card" href="https://www.instagram.com/cbiphonesce" target="_blank" rel="noopener" data-track="parceiro_cbiphones">
+            <img class="cbi" src="img/cbiphones.webp" alt="Bell sorrindo diante do letreiro dourado e preto da CB iPhones" loading="lazy" width="941" height="1186">
+            <div class="p-body">
+              <h3>CB iPhones</h3>
+              <p>Loja de iPhones parceira.</p>
+              <span class="p-link"><span>Ver @cbiphonesce</span><span aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+          <a class="p-card" href="https://www.instagram.com/cbbronzeamento" target="_blank" rel="noopener" data-track="parceiro_cbbronzeamento">
+            <img class="cbb" src="img/cbbronze.webp" alt="Bell de vestido vermelho no espaço da CB Bronzeamento" loading="lazy" width="720" height="1280">
+            <div class="p-body">
+              <h3>CB Bronzeamento</h3>
+              <p>Estúdio de bronzeamento parceiro.</p>
+              <span class="p-link"><span>Ver @cbbronzeamento</span><span aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+          <a class="p-card" href="https://www.instagram.com/b7bodyfitness" target="_blank" rel="noopener" data-track="parceiro_b7">
+            <img class="b7" src="img/b7.webp" alt="Bell na entrada da academia B7 Body Fitness, com o braço levantado" loading="lazy" width="900" height="1116">
+            <div class="p-body">
+              <h3>B7 Body Fitness</h3>
+              <p>Rede de academias parceira. Meus seguidores têm 10% off com a B7.</p>
+              <span class="p-link"><span>Ver @b7bodyfitness</span><span aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="in">
+    <section id="numeros">
+      <!-- NÚMEROS: atualize aqui os valores do painel do Instagram -->
+      <div class="sec-head" style="justify-items:center;text-align:center"><h2>Meu <em>alcance.</em></h2></div>
+      <div class="metrics">
+        <div class="metric"><b data-n="3.2" data-d="1" data-suf=" mi">3,2 mi</b><span>visualizações nos últimos 30 dias</span></div>
+        <div class="metric"><b data-n="34.4" data-d="1" data-suf=" mil">34,4 mil</b><span>seguidores no Instagram</span></div>
+        <div class="metric"><b data-n="1293" data-d="0" data-pre="+">+1.293</b><span>novos seguidores em 30 dias</span></div>
+        <div class="metric"><b>1,5–2,6 mil</b><span>pessoas alcançadas por story</span></div>
+        <div class="metric"><b data-n="80" data-d="0" data-suf="%">80%</b><span>do meu alcance é feminino</span></div>
+      </div>
+    </section>
+  </div>
+
+  <div class="band">
+    <div class="in">
+    <section id="feed">
+      <div class="sec-head"><span class="eyebrow">Do meu feed</span><h2>Beleza, rotina e <em>muita conexão.</em></h2></div>
+      <div class="rail" id="rail" aria-label="Fotos e vídeos do perfil da Bell">
+        <figure class="r vd"><video muted loop playsinline preload="metadata" poster="vid/p1.webp" width="480" height="854" aria-label="Vídeo da Bell"><source src="vid/clip1.mp4" type="video/mp4"></video></figure>
+        <figure class="r ph"><img src="img/feed1.webp" alt="Bell com jaqueta preta de couro e cabelo loiro volumoso" loading="lazy" width="720" height="791"></figure>
+        <figure class="r ph"><img src="img/feed2.webp" alt="Bell sorrindo com um buquê de rosas vermelhas" loading="lazy" width="720" height="803"></figure>
+        <figure class="r vd"><video muted loop playsinline preload="metadata" poster="vid/p2.webp" width="480" height="854" aria-label="Vídeo da Bell"><source src="vid/clip2.mp4" type="video/mp4"></video></figure>
+        <figure class="r vd"><video muted loop playsinline preload="metadata" poster="vid/p3.webp" width="480" height="854" aria-label="Vídeo da Bell"><source src="vid/clip3.mp4" type="video/mp4"></video></figure>
+        <figure class="r ph"><img src="img/feed3.webp" alt="Bell no aeroporto com uma mala rosa" loading="lazy" width="720" height="977"></figure>
+        <figure class="r ph"><img src="img/feed4.webp" alt="Bell de lenço e óculos escuros em um passeio" loading="lazy" width="720" height="810"></figure>
+        <figure class="r vd"><video muted loop playsinline preload="metadata" poster="vid/p4.webp" width="480" height="854" aria-label="Vídeo da Bell"><source src="vid/clip4.mp4" type="video/mp4"></video></figure>
+        <figure class="r ph"><img src="img/feed5.webp" alt="Bell correndo na rua, de óculos escuros" loading="lazy" width="720" height="812"></figure>
+      </div>
+      <div class="feed-cta"><a class="btn" href="https://www.instagram.com/_bellnascimento" target="_blank" rel="noopener" data-track="feed_instagram">Ver mais no Instagram <span class="ar" aria-hidden="true">↗</span></a></div>
+</section>
+    </div>
+  </div>
+
+  <div class="in">
+    <section class="contact" id="contato">
+      <span class="eyebrow">Contato</span>
+      <h2>Vamos criar <em>juntas.</em></h2>
+      <p class="lead">Tem uma ideia ou quer apresentar sua marca para o meu público? Vamos tirar esse projeto do papel e criar algo especial. Entre em contato e vamos conversar. 💌</p>
+      <div class="channels">
+        <a class="btn" href="https://www.instagram.com/_bellnascimento" target="_blank" rel="noopener" data-track="canal_instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+          Instagram</a>
+        <a class="btn" href="https://www.tiktok.com/@_bellnascimentog" target="_blank" rel="noopener" data-track="canal_tiktok">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+          TikTok</a>
+      </div>
+      <div class="mail"><code id="mailaddr">isabelenascentogirao@gmail.com</code><button type="button" id="copyMail" data-track="copiar_email">Copiar e-mail</button></div>
+      <p class="copied" id="copied" role="status"></p>
+    </section>
+  </div>
+</main>
+
+<div class="in">
+  <footer>
+    <span class="logo" style="font-size:2rem">Bell</span>
+    <span>© <span id="year">2026</span> Bell. Todos os direitos reservados.</span>
+  </footer>
+</div>
+
+<dialog id="dlg" aria-labelledby="dlgTitle">
+  <div class="sheet">
+    <button class="x" type="button" data-close aria-label="Fechar">×</button>
+    <h2 id="dlgTitle">Vamos criar <em>juntas.</em></h2>
+    <p class="sub">Diga seu nome e o seu negócio e chame a Bell no WhatsApp.</p>
+    <form id="form" novalidate>
+      <div class="field"><label for="nome">Seu nome</label><input id="nome" name="nome" autocomplete="name" maxlength="80"></div>
+      <div class="field"><label for="negocio">Seu negócio</label><input id="negocio" name="negocio" autocomplete="organization" maxlength="120" placeholder="Ex.: da Loja Maria Moda, roupas femininas"></div>
+      <div class="preview"><span>Mensagem que será enviada</span><div id="preview"></div></div>
+      <a class="btn solid" id="wa" href="#" target="_blank" rel="noopener" data-track="modal_whatsapp" style="width:100%">Chamar no WhatsApp <span class="ar" aria-hidden="true">↗</span></a>
+    </form>
+  </div>
+</dialog>
+
+<script>
+/* ===== CONFIGURAÇÃO: edite só aqui =====
+   WHATSAPP: só dígitos, com 55 + DDD + número. Número da Bell.
+ */
+const WHATSAPP="5585985250956";
+const EMAIL="isabelenascentogirao@gmail.com";
+
+
+const $=s=>document.querySelector(s);
+function track(label){try{if(window.dataLayer)window.dataLayer.push({event:"cta_click",label})}catch(e){}}
+$("#year").textContent=new Date().getFullYear();
+
+/* mensagem do WhatsApp */
+function mensagem(){
+  const nome=($("#nome").value||"").trim().replace(/[.,;\s]+$/,""),neg=($("#negocio").value||"").trim().replace(/[.,;\s]+$/,"");
+  let quem="";
+  if(nome)quem="Aqui é "+nome+(neg?", "+neg:"")+". ";
+  else if(neg)quem="Meu negócio: "+neg+". ";
+  return "Oi, Bell! Tudo bem? "+quem+"Vi o seu trabalho e gostaria de saber mais sobre parcerias. Vamos conversar?";
+}
+function atualizar(){const m=mensagem();$("#preview").textContent=m;$("#wa").href="https://wa.me/"+WHATSAPP.replace(/\D/g,"")+"?text="+encodeURIComponent(m)}
+$("#form").addEventListener("input",atualizar);
+$("#form").addEventListener("submit",e=>e.preventDefault());
+atualizar();
+
+/* modal */
+const dlg=$("#dlg");
+function abrir(){
+  if(typeof dlg.showModal==="function"){dlg.showModal();document.documentElement.classList.add("lock")}else dlg.setAttribute("open","");
+  setTimeout(()=>$("#nome").focus(),50);
+}
+function fechar(){dlg.close();document.documentElement.classList.remove("lock")}
+document.querySelectorAll("[data-open]").forEach(b=>b.addEventListener("click",abrir));
+dlg.querySelector("[data-close]").addEventListener("click",fechar);
+dlg.addEventListener("click",e=>{if(e.target===dlg)fechar()});
+dlg.addEventListener("close",()=>document.documentElement.classList.remove("lock"));
+
+/* copiar e-mail */
+$("#copyMail").addEventListener("click",async()=>{
+  const out=$("#copied");
+  try{await navigator.clipboard.writeText(EMAIL);out.textContent="E-mail copiado."}
+  catch(e){const r=document.createRange();r.selectNodeContents($("#mailaddr"));const s=getSelection();s.removeAllRanges();s.addRange(r);out.textContent="Endereço selecionado. Use copiar do seu aparelho."}
+});
+
+/* feed: rolagem automatica de ida e volta, videos curtos em loop */
+const rail=$("#rail"),reduced=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const ICO='<svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9.5h3.5L12 6v12l-4.5-3.5H4z"/><path d="M16 9.5l5 5M21 9.5l-5 5"/></svg><svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9.5h3.5L12 6v12l-4.5-3.5H4z"/><path d="M15.5 9a4 4 0 010 6M18 6.8a7.5 7.5 0 010 10.4"/></svg>';
+const videos=[...rail.querySelectorAll("video")];
+videos.forEach(v=>{
+  v.muted=true;v.loop=true;v.playsInline=true;v.disablePictureInPicture=true;if(reduced)v.controls=true;
+  const b=document.createElement("button");b.type="button";b.className="snd";b.setAttribute("aria-pressed","false");b.setAttribute("aria-label","Ativar o som do vídeo");b.innerHTML=ICO;v.parentNode.appendChild(b);
+  /* se o vídeo falhar, tenta de novo uma vez; se falhar de novo, fica só a imagem de capa */
+  let tentou=false;
+  v.addEventListener("error",()=>{
+    if(!tentou){tentou=true;setTimeout(()=>{v.load()},600)}
+    else{const img=new Image();img.src=v.getAttribute("poster");img.alt="Vídeo da Bell";img.width=480;img.height=854;v.parentNode.replaceChild(img,v);b.remove()}
+  });
+});
+const tocar=v=>{if(!v.paused)return;const p=v.play();if(p&&p.catch)p.catch(()=>{})};
+if("IntersectionObserver" in window&&!reduced){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting)tocar(v);else if(v.muted&&!v.paused)v.pause()}),{threshold:.35});
+  videos.forEach(v=>io.observe(v));
+}
+const comSom=()=>videos.some(v=>!v.muted);
+let pos=0,ult=0,dir=1,espera=0,pausado=reduced,retomar;
+const limite=()=>Math.max(0,rail.scrollWidth-rail.clientWidth);
+function pausar(){pausado=true;clearTimeout(retomar)}
+function seguir(){clearTimeout(retomar);retomar=setTimeout(()=>{pos=rail.scrollLeft;pausado=reduced||comSom()},2200)}
+["pointerdown","touchstart","wheel","mouseenter","focusin"].forEach(ev=>rail.addEventListener(ev,pausar,{passive:true}));
+["pointerup","touchend","touchcancel","mouseleave","focusout"].forEach(ev=>rail.addEventListener(ev,seguir,{passive:true}));
+rail.addEventListener("click",e=>{
+  const b=e.target.closest(".snd");if(!b)return;
+  const v=b.parentNode.querySelector("video");if(!v)return;
+  const ligar=v.muted;
+  videos.forEach(o=>{o.muted=true});
+  rail.querySelectorAll(".snd").forEach(o=>{o.setAttribute("aria-pressed","false");o.setAttribute("aria-label","Ativar o som do vídeo")});
+  if(ligar){v.muted=false;b.setAttribute("aria-pressed","true");b.setAttribute("aria-label","Desativar o som do vídeo");tocar(v);pausar()}
+  else seguir();
+});
+function passo(t){
+  if(!pausado&&!document.hidden&&ult){
+    const dt=Math.min(t-ult,50);
+    if(espera>0)espera-=dt;
+    else{pos+=dir*dt*0.03;const m=limite();if(pos>=m){pos=m;dir=-1;espera=1200}else if(pos<=0){pos=0;dir=1;espera=1200}rail.scrollLeft=pos}
+  }
+  ult=t;requestAnimationFrame(passo)
+}
+if(!reduced)requestAnimationFrame(passo);
+
+/* entrada suave dos blocos ao rolar a pagina e contagem dos numeros */
+(function(){
+  if(reduced||!("IntersectionObserver" in window))return;
+  const grupos=[".intro .txt > *",".intro .photo","#parcerias .sec-head",".partners .p-card","#numeros .sec-head",".metrics .metric","#feed .sec-head","#feed .rail","#feed .feed-cta",".contact > *","footer > *"];
+  const alvos=[];
+  grupos.forEach(g=>document.querySelectorAll(g).forEach((el,i)=>{el.classList.add("rv");el.style.setProperty("--d",(Math.min(i,5)*0.1)+"s");alvos.push(el)}));
+  document.documentElement.classList.add("rv-on");
+  const fmt=(n,d)=>n.toLocaleString("pt-BR",{minimumFractionDigits:d,maximumFractionDigits:d});
+  function contar(b){
+    const alvo=parseFloat(b.dataset.n),d=+b.dataset.d||0,pre=b.dataset.pre||"",suf=b.dataset.suf||"",t0=performance.now(),dur=1500;
+    (function f(t){const k=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-k,3);b.textContent=pre+fmt(alvo*e,d)+suf;if(k<1)requestAnimationFrame(f)})(t0);
+  }
+  const io=new IntersectionObserver(es=>es.forEach(e=>{
+    if(!e.isIntersecting)return;
+    e.target.classList.add("in");io.unobserve(e.target);
+    const b=e.target.querySelector&&e.target.querySelector("b[data-n]");if(b)setTimeout(()=>contar(b),250);
+  }),{threshold:.1,rootMargin:"0px 0px -4% 0px"});
+  alvos.forEach(el=>io.observe(el));
+})();
+
+document.addEventListener("click",e=>{const t=e.target.closest("[data-track]");if(t)track(t.dataset.track)});
+</script>
+
+</body>
+</html>

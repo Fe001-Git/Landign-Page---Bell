@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bellnascimento.com.br/sitemap.xml
