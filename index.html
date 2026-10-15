@@ -160,8 +160,6 @@ input:focus-visible{outline:2px solid var(--accent);outline-offset:1px;border-co
 .rv-on .rv.in{opacity:1;transform:none}
 .rv-on .photo.rv{transform:translate3d(0,40px,0) scale(.97)}
 .rv-on .photo.rv.in{transform:none}
-.rv-on .rail.rv{transform:translate3d(48px,0,0)}
-.rv-on .rail.rv.in{transform:none}
 @media (prefers-reduced-motion:no-preference){
   .hero>img{animation:zoom 2.4s cubic-bezier(.2,.7,.2,1) both}
   .hero .meta,.hero h1,.hero .tag{animation:subir 1s cubic-bezier(.2,.7,.2,1) both}
@@ -215,6 +213,28 @@ html.lock{overflow:hidden}
 
   <div class="band">
     <div class="in">
+      <section id="book">
+        <div class="sec-head"><h2>Meu <em>book.</em></h2></div>
+        <div class="rail" id="bookRail" aria-label="Fotos do book da Bell">
+        <figure class="r ph"><img src="img/book1.webp" alt="Bell com conjunto jeans claro em um café cercado de plantas" loading="lazy" decoding="async" width="800" height="1000"></figure>
+        <figure class="r ph"><img src="img/book2.webp" alt="Bell de biquíni preto na praia, com céu azul ao fundo" loading="lazy" decoding="async" width="800" height="1000"></figure>
+        <figure class="r ph"><img src="img/book3.webp" alt="Bell em close, ajeitando uma armação de óculos de grau" loading="lazy" decoding="async" width="800" height="1000"></figure>
+        <figure class="r ph"><img src="img/book4.webp" alt="Bell de macacão branco e óculos escuros em um jardim" loading="lazy" decoding="async" width="800" height="1000"></figure>
+        <figure class="r ph"><img src="img/book5.webp" alt="Bell deitada na areia, com calça listrada e top marrom" loading="lazy" decoding="async" width="800" height="1000"></figure>
+        <figure class="r ph"><img src="img/book6.webp" alt="Bell de cabelo loiro volumoso em um salão" loading="lazy" decoding="async" width="800" height="1000"></figure>
+        <figure class="r ph"><img src="img/book7.webp" alt="Bell de top jeans, olhando de lado entre as folhagens" loading="lazy" decoding="async" width="800" height="1000"></figure>
+        <figure class="r ph"><img src="img/book8.webp" alt="Bell de biquíni verde entre as pedras, na beira do mar" loading="lazy" decoding="async" width="800" height="1000"></figure>
+        <figure class="r ph"><img src="img/book9.webp" alt="Bell em close, com uma armação de óculos preta" loading="lazy" decoding="async" width="800" height="1000"></figure>
+        <figure class="r ph"><img src="img/book10.webp" alt="Bell sorrindo e comendo um salgado em um estúdio claro" loading="lazy" decoding="async" width="800" height="1000"></figure>
+        <figure class="r ph"><img src="img/book11.webp" alt="Bell de cabelo loiro em um salão, com a mão no cabelo" loading="lazy" decoding="async" width="800" height="1000"></figure>
+        <figure class="r ph"><img src="img/book12.webp" alt="Bell sentada em um salão, com o cabelo loiro sendo ajeitado" loading="lazy" decoding="async" width="800" height="1000"></figure>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div>
+    <div class="in">
       <section id="parcerias">
         <div class="sec-head">
           <span class="eyebrow">Parcerias estratégicas</span>
@@ -250,10 +270,11 @@ html.lock{overflow:hidden}
     </div>
   </div>
 
-  <div class="in">
+  <div class="band">
+    <div class="in">
     <section id="numeros">
       <!-- NÚMEROS: atualize aqui os valores do painel do Instagram -->
-      <div class="sec-head" style="justify-items:center;text-align:center"><h2>Meu <em>alcance.</em></h2></div>
+      <div class="sec-head" style="justify-items:center;text-align:center"><h2><em>Métricas.</em></h2></div>
       <div class="metrics">
         <div class="metric"><b data-n="3.2" data-d="1" data-suf=" mi">3,2 mi</b><span>visualizações nos últimos 30 dias</span></div>
         <div class="metric"><b data-n="34.4" data-d="1" data-suf=" mil">34,4 mil</b><span>seguidores no Instagram</span></div>
@@ -262,9 +283,10 @@ html.lock{overflow:hidden}
         <div class="metric"><b data-n="80" data-d="0" data-suf="%">80%</b><span>do meu alcance é feminino</span></div>
       </div>
     </section>
+    </div>
   </div>
 
-  <div class="band">
+  <div>
     <div class="in">
     <section id="feed">
       <div class="sec-head"><span class="eyebrow">Do meu feed</span><h2>Beleza, rotina e <em>muita conexão.</em></h2></div>
@@ -284,7 +306,8 @@ html.lock{overflow:hidden}
     </div>
   </div>
 
-  <div class="in">
+  <div class="band">
+    <div class="in">
     <section class="contact" id="contato">
       <span class="eyebrow">Contato</span>
       <h2>Vamos criar <em>juntas.</em></h2>
@@ -300,6 +323,7 @@ html.lock{overflow:hidden}
       <div class="mail"><code id="mailaddr">isabelenascentogirao@gmail.com</code><button type="button" id="copyMail" data-track="copiar_email">Copiar e-mail</button></div>
       <p class="copied" id="copied" role="status"></p>
     </section>
+    </div>
   </div>
 </main>
 
@@ -416,7 +440,7 @@ if(!reduced)requestAnimationFrame(passo);
 /* entrada suave dos blocos ao rolar a pagina e contagem dos numeros */
 (function(){
   if(reduced||!("IntersectionObserver" in window))return;
-  const grupos=[".intro .txt > *",".intro .photo","#parcerias .sec-head",".partners .p-card","#numeros .sec-head",".metrics .metric","#feed .sec-head","#feed .rail","#feed .feed-cta",".contact > *","footer > *"];
+  const grupos=[".intro .txt > *","#book .sec-head","#book .rail",".intro .photo","#parcerias .sec-head",".partners .p-card","#numeros .sec-head",".metrics .metric","#feed .sec-head","#feed .rail","#feed .feed-cta",".contact > *","footer > *"];
   const alvos=[];
   grupos.forEach(g=>document.querySelectorAll(g).forEach((el,i)=>{el.classList.add("rv");el.style.setProperty("--d",(Math.min(i,5)*0.1)+"s");alvos.push(el)}));
   document.documentElement.classList.add("rv-on");
@@ -431,6 +455,35 @@ if(!reduced)requestAnimationFrame(passo);
     const b=e.target.querySelector&&e.target.querySelector("b[data-n]");if(b)setTimeout(()=>contar(b),250);
   }),{threshold:.1,rootMargin:"0px 0px -4% 0px"});
   alvos.forEach(el=>io.observe(el));
+})();
+
+/* book: rolagem lateral em loop, sem fim; para ao tocar e volta sozinha */
+(function(){
+  const r=$("#bookRail");if(!r)return;
+  const orig=[...r.children];
+  if(reduced){return}
+  for(let k=0;k<2;k++)orig.forEach(el=>{const c=el.cloneNode(true);c.setAttribute("aria-hidden","true");const im=c.querySelector("img");if(im)im.alt="";r.appendChild(c)});
+  const setW=()=>r.children[orig.length].offsetLeft-r.children[0].offsetLeft;
+  let W=0,pos=0,pausado=false,ult=0,visivel=false,retomar,pronto=false;
+  function iniciar(){W=setW();if(!W)return;pos=W;r.scrollLeft=pos;pronto=true}
+  addEventListener("load",iniciar);iniciar();
+  addEventListener("resize",()=>{const f=W?(r.scrollLeft-W)/W:0;W=setW();if(W){pos=W+f*W;r.scrollLeft=pos}});
+  function ajustar(){if(!W)return;let x=r.scrollLeft;if(x>=W*2){x-=W}else if(x<W*0.25){x+=W}else return;r.scrollLeft=x;pos=x}
+  r.addEventListener("scroll",()=>{if(pausado)ajustar()},{passive:true});
+  const parar=()=>{pausado=true;clearTimeout(retomar)};
+  const seguir=()=>{clearTimeout(retomar);retomar=setTimeout(()=>{pos=r.scrollLeft;pausado=false},2200)};
+  ["pointerdown","touchstart","wheel","mouseenter","focusin"].forEach(e=>r.addEventListener(e,parar,{passive:true}));
+  ["pointerup","touchend","touchcancel","mouseleave","focusout"].forEach(e=>r.addEventListener(e,seguir,{passive:true}));
+  if("IntersectionObserver" in window)new IntersectionObserver(es=>{visivel=es[0].isIntersecting},{threshold:0}).observe(r);else visivel=true;
+  function passo(t){
+    if(pronto&&visivel&&!pausado&&!document.hidden&&ult){
+      const dt=Math.min(t-ult,50);pos+=dt*0.045;
+      if(pos>=W*2)pos-=W;
+      r.scrollLeft=pos;
+    }
+    ult=t;requestAnimationFrame(passo)
+  }
+  requestAnimationFrame(passo);
 })();
 
 document.addEventListener("click",e=>{const t=e.target.closest("[data-track]");if(t)track(t.dataset.track)});
